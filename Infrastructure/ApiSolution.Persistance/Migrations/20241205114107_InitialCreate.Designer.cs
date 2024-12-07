@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiSolution.Persistance.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241204153211_InitialCreate")]
+    [Migration("20241205114107_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -52,23 +52,23 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(677),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(1907),
                             IsDeleted = false,
-                            Name = "Games, Toys & Games"
+                            Name = "Toys"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(1576),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7349),
                             IsDeleted = false,
-                            Name = "Jewelery, Jewelery & Computers"
+                            Name = "Tools & Sports"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(1594),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7655),
                             IsDeleted = true,
-                            Name = "Grocery & Health"
+                            Name = "Toys, Baby & Electronics"
                         });
                 });
 
@@ -104,7 +104,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4080),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3524),
                             IsDeleted = false,
                             Name = "Elektrik",
                             ParentId = 0,
@@ -113,7 +113,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4086),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3531),
                             IsDeleted = false,
                             Name = "Moda",
                             ParentId = 0,
@@ -122,7 +122,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4088),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3533),
                             IsDeleted = false,
                             Name = "Bilgisayar",
                             ParentId = 1,
@@ -131,7 +131,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4090),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3535),
                             IsDeleted = false,
                             Name = "Kadın",
                             ParentId = 2,
@@ -175,28 +175,28 @@ namespace ApiSolution.Persistance.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6783),
-                            Description = "Enim ea labore çakıl illo.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8310),
+                            Description = "Sevindi aliquam yaptı okuma sandalye.",
                             IsDeleted = false,
-                            Title = "Aliquid türemiş."
+                            Title = "Teldeki quia."
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6875),
-                            Description = "Aut şafak incidunt domates quis.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8423),
+                            Description = "Consequatur praesentium ipsum praesentium mi.",
                             IsDeleted = true,
-                            Title = "Neque."
+                            Title = "Modi."
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6922),
-                            Description = "Veritatis yaptı voluptatem voluptatem rem.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8479),
+                            Description = "Ullam dolores dağılımı et ut.",
                             IsDeleted = false,
-                            Title = "Nesciunt makinesi."
+                            Title = "Açılmadan voluptatem."
                         });
                 });
 
@@ -242,23 +242,23 @@ namespace ApiSolution.Persistance.Migrations
                         {
                             Id = 1,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 990, DateTimeKind.Local).AddTicks(3465),
-                            Description = "The Football Is Good For Training And Recreational Purposes",
-                            Discount = 0.1078473435847230m,
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3191),
+                            Description = "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+                            Discount = 5.731400159660870m,
                             IsDeleted = false,
-                            Price = 522.57m,
-                            Title = "Rustic Concrete Shirt"
+                            Price = 735.20m,
+                            Title = "Small Wooden Keyboard"
                         },
                         new
                         {
                             Id = 2,
                             BrandId = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 32, 10, 990, DateTimeKind.Local).AddTicks(3564),
-                            Description = "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-                            Discount = 3.159446548218030m,
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3382),
+                            Description = "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+                            Discount = 8.262444996746950m,
                             IsDeleted = false,
-                            Price = 871.18m,
-                            Title = "Intelligent Rubber Bacon"
+                            Price = 95.60m,
+                            Title = "Intelligent Cotton Shirt"
                         });
                 });
 

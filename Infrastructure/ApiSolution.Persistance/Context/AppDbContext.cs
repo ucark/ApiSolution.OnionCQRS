@@ -1,5 +1,6 @@
 ﻿using ApiSolution.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Reflection;
 
 namespace ApiSolution.Persistance.Context
@@ -21,14 +22,12 @@ namespace ApiSolution.Persistance.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            //modelBuilder.Entity<Product>(entity =>
-            //{
-            //    entity.Property(p => p.Price)
-            //    .HasPrecision(18, 2);
-
-            //    entity.Property(p=>p.Discount)
-            //    .HasPrecision(18, 2);
-            //});
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.ConfigureWarnings(warnings =>
+            warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }

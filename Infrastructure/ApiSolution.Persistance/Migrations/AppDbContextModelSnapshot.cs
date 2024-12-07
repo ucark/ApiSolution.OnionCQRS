@@ -49,23 +49,23 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 888, DateTimeKind.Local).AddTicks(6332),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(1907),
                             IsDeleted = false,
-                            Name = "Health"
+                            Name = "Toys"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 889, DateTimeKind.Local).AddTicks(977),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7349),
                             IsDeleted = false,
-                            Name = "Shoes, Jewelery & Grocery"
+                            Name = "Tools & Sports"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 889, DateTimeKind.Local).AddTicks(1016),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7655),
                             IsDeleted = true,
-                            Name = "Games"
+                            Name = "Toys, Baby & Electronics"
                         });
                 });
 
@@ -101,7 +101,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 890, DateTimeKind.Local).AddTicks(2094),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3524),
                             IsDeleted = false,
                             Name = "Elektrik",
                             ParentId = 0,
@@ -110,7 +110,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 890, DateTimeKind.Local).AddTicks(2098),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3531),
                             IsDeleted = false,
                             Name = "Moda",
                             ParentId = 0,
@@ -119,7 +119,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 890, DateTimeKind.Local).AddTicks(2101),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3533),
                             IsDeleted = false,
                             Name = "Bilgisayar",
                             ParentId = 1,
@@ -128,7 +128,7 @@ namespace ApiSolution.Persistance.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 890, DateTimeKind.Local).AddTicks(2103),
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3535),
                             IsDeleted = false,
                             Name = "Kadın",
                             ParentId = 2,
@@ -172,28 +172,28 @@ namespace ApiSolution.Persistance.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 917, DateTimeKind.Local).AddTicks(3113),
-                            Description = "Adipisci çıktılar molestiae odio gitti.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8310),
+                            Description = "Sevindi aliquam yaptı okuma sandalye.",
                             IsDeleted = false,
-                            Title = "Doloremque non."
+                            Title = "Teldeki quia."
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 917, DateTimeKind.Local).AddTicks(3202),
-                            Description = "Blanditiis dicta kapının quam tv.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8423),
+                            Description = "Consequatur praesentium ipsum praesentium mi.",
                             IsDeleted = true,
-                            Title = "Anlamsız."
+                            Title = "Modi."
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 917, DateTimeKind.Local).AddTicks(3246),
-                            Description = "Quis consectetur ratione esse layıkıyla.",
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8479),
+                            Description = "Ullam dolores dağılımı et ut.",
                             IsDeleted = false,
-                            Title = "Ratione sıradanlıktan."
+                            Title = "Açılmadan voluptatem."
                         });
                 });
 
@@ -239,23 +239,23 @@ namespace ApiSolution.Persistance.Migrations
                         {
                             Id = 1,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 920, DateTimeKind.Local).AddTicks(9786),
-                            Description = "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-                            Discount = 7.353409143100940m,
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3191),
+                            Description = "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+                            Discount = 5.731400159660870m,
                             IsDeleted = false,
-                            Price = 395.00m,
-                            Title = "Gorgeous Frozen Soap"
+                            Price = 735.20m,
+                            Title = "Small Wooden Keyboard"
                         },
                         new
                         {
                             Id = 2,
                             BrandId = 3,
-                            CreatedDate = new DateTime(2024, 12, 4, 18, 33, 53, 920, DateTimeKind.Local).AddTicks(9888),
-                            Description = "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-                            Discount = 3.585345428876230m,
+                            CreatedDate = new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3382),
+                            Description = "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+                            Discount = 8.262444996746950m,
                             IsDeleted = false,
-                            Price = 885.83m,
-                            Title = "Unbranded Wooden Keyboard"
+                            Price = 95.60m,
+                            Title = "Intelligent Cotton Shirt"
                         });
                 });
 

@@ -122,9 +122,9 @@ namespace ApiSolution.Persistance.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(677), false, "Games, Toys & Games" },
-                    { 2, new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(1576), false, "Jewelery, Jewelery & Computers" },
-                    { 3, new DateTime(2024, 12, 4, 18, 32, 10, 970, DateTimeKind.Local).AddTicks(1594), true, "Grocery & Health" }
+                    { 1, new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(1907), false, "Toys" },
+                    { 2, new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7349), false, "Tools & Sports" },
+                    { 3, new DateTime(2024, 12, 5, 14, 41, 6, 26, DateTimeKind.Local).AddTicks(7655), true, "Toys, Baby & Electronics" }
                 });
 
             migrationBuilder.InsertData(
@@ -132,10 +132,10 @@ namespace ApiSolution.Persistance.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name", "ParentId", "Priorty" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4080), false, "Elektrik", 0, 1 },
-                    { 2, new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4086), false, "Moda", 0, 2 },
-                    { 3, new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4088), false, "Bilgisayar", 1, 1 },
-                    { 4, new DateTime(2024, 12, 4, 18, 32, 10, 971, DateTimeKind.Local).AddTicks(4090), false, "Kadın", 2, 1 }
+                    { 1, new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3524), false, "Elektrik", 0, 1 },
+                    { 2, new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3531), false, "Moda", 0, 2 },
+                    { 3, new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3533), false, "Bilgisayar", 1, 1 },
+                    { 4, new DateTime(2024, 12, 5, 14, 41, 6, 28, DateTimeKind.Local).AddTicks(3535), false, "Kadın", 2, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -143,9 +143,9 @@ namespace ApiSolution.Persistance.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Description", "IsDeleted", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6783), "Enim ea labore çakıl illo.", false, "Aliquid türemiş." },
-                    { 2, 3, new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6875), "Aut şafak incidunt domates quis.", true, "Neque." },
-                    { 3, 4, new DateTime(2024, 12, 4, 18, 32, 10, 986, DateTimeKind.Local).AddTicks(6922), "Veritatis yaptı voluptatem voluptatem rem.", false, "Nesciunt makinesi." }
+                    { 1, 1, new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8310), "Sevindi aliquam yaptı okuma sandalye.", false, "Teldeki quia." },
+                    { 2, 3, new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8423), "Consequatur praesentium ipsum praesentium mi.", true, "Modi." },
+                    { 3, 4, new DateTime(2024, 12, 5, 14, 41, 6, 70, DateTimeKind.Local).AddTicks(8479), "Ullam dolores dağılımı et ut.", false, "Açılmadan voluptatem." }
                 });
 
             migrationBuilder.InsertData(
@@ -153,8 +153,8 @@ namespace ApiSolution.Persistance.Migrations
                 columns: new[] { "Id", "BrandId", "CreatedDate", "Description", "Discount", "IsDeleted", "Price", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 12, 4, 18, 32, 10, 990, DateTimeKind.Local).AddTicks(3465), "The Football Is Good For Training And Recreational Purposes", 0.1078473435847230m, false, 522.57m, "Rustic Concrete Shirt" },
-                    { 2, 3, new DateTime(2024, 12, 4, 18, 32, 10, 990, DateTimeKind.Local).AddTicks(3564), "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart", 3.159446548218030m, false, 871.18m, "Intelligent Rubber Bacon" }
+                    { 1, 1, new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3191), "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", 5.731400159660870m, false, 735.20m, "Small Wooden Keyboard" },
+                    { 2, 3, new DateTime(2024, 12, 5, 14, 41, 6, 76, DateTimeKind.Local).AddTicks(3382), "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", 8.262444996746950m, false, 95.60m, "Intelligent Cotton Shirt" }
                 });
 
             migrationBuilder.CreateIndex(
