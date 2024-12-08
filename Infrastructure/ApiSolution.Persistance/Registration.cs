@@ -1,6 +1,8 @@
 ﻿using ApiSolution.Application.Interfaces.Repositories;
+using ApiSolution.Application.Interfaces.UnitOfWorks;
 using ApiSolution.Persistance.Context;
 using ApiSolution.Persistance.Repositories;
+using ApiSolution.Persistance.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +18,8 @@ namespace ApiSolution.Persistance
 
             services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
             services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }
