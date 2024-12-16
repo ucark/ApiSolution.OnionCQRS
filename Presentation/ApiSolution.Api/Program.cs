@@ -1,5 +1,6 @@
 using ApiSolution.Persistance;
-
+using ApiSolution.Application;
+using ApiSolution.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Configuration
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddApplication();
+builder.Services.AddCustomMapper();
 
 var app = builder.Build();
 
