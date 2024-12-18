@@ -32,9 +32,14 @@ namespace ApiSolution.Persistance.Repositories
             await Task.Run(() => Table.Remove(entity));
         }
 
-        //public async Task SoftDeleteAsyn(T entity)
-        //{
-        //    await Task.Run(() => Table.Update(entity));
-        //}
+        public async Task HardDeleteRangeAsync(IList<T> entity)
+        {
+            await Task.Run(() => Table.RemoveRange(entity));
+        }
+
+        public async Task SoftDeleteAsyn(T entity)
+        {
+            await Task.Run(() => Table.Update(entity));
+        }
     }
 }
