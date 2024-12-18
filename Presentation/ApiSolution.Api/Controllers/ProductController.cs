@@ -1,4 +1,6 @@
 ﻿using ApiSolution.Application.Features.Products.Command.CreateProduct;
+using ApiSolution.Application.Features.Products.Command.DeleteProduct;
+using ApiSolution.Application.Features.Products.Command.UpdateProduct;
 using ApiSolution.Application.Features.Products.Queries.GetAllProducts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
