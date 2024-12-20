@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ApiSolution.Mapper\ApiSolution.Mapper.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ApiSolution.Infrastructure\ApiSolution.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\ApiSolution.Persistance\ApiSolution.Persistance.csproj" />
   </ItemGroup>
 
