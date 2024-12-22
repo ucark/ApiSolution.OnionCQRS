@@ -20,4 +20,8 @@
     <ProjectReference Include="..\ApiSolution.Domain\ApiSolution.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Auth\Command\Queries\" />
+  </ItemGroup>
+
 </Project>

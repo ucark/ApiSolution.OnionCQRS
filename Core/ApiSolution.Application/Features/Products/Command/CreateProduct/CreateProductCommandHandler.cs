@@ -1,18 +1,19 @@
-﻿using ApiSolution.Application.Features.Products.Rules;
+﻿using ApiSolution.Application.Bases;
+using ApiSolution.Application.Features.Products.Rules;
+using ApiSolution.Application.Interfaces.AutoMapper;
 using ApiSolution.Application.Interfaces.UnitOfWorks;
 using ApiSolution.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace ApiSolution.Application.Features.Products.Command.CreateProduct
 {
-    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequest, Unit>
+    public class CreateProductCommandHandler : BaseHandler, IRequestHandler<CreateProductCommandRequest, Unit>
     {
-        private readonly IUnitOfWork unitOfWork;
         private readonly ProductRules productRules;
 
-        public CreateProductCommandHandler(IUnitOfWork unitOfWork, ProductRules productRules    )
+        public CreateProductCommandHandler(ProductRules productRules, IMapper mapper, IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor) : base(mapper, unitOfWork, httpContextAccessor)
         {
-            this.unitOfWork = unitOfWork;
             this.productRules = productRules;
         }
         public async Task<Unit> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
@@ -27,12 +28,12 @@ namespace ApiSolution.Application.Features.Products.Command.CreateProduct
             if (await unitOfWork.SaveAsync() > 0)
             {
                 foreach (var categoryId in request.CategoryIds)
-                    await unitOfWork.GetWriteRepository<ProductCategory>()
-                        .AddAsync(new()
-                        {
-                            ProductId = product.Id,
-                            CategoryId = categoryId,
-                        });
+                    await unitOfWork.GetWriteRepository<ProductCategory>().AddAsync(new()
+                    {
+                        ProductId = product.Id,
+                        CategoryId = categoryId
+                    });
+
                 await unitOfWork.SaveAsync();
             }
 
