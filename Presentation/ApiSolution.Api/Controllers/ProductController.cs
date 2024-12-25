@@ -1,4 +1,5 @@
-﻿using ApiSolution.Application.Features.Products.Command.CreateProduct;
+﻿using ApiSolution.Application.Features.Brands.Command.CreateBrand;
+using ApiSolution.Application.Features.Products.Command.CreateProduct;
 using ApiSolution.Application.Features.Products.Command.DeleteProduct;
 using ApiSolution.Application.Features.Products.Command.UpdateProduct;
 using ApiSolution.Application.Features.Products.Queries.GetAllProducts;
@@ -43,12 +44,29 @@ namespace ApiSolution.Api.Controllers
 
             return Ok();
         }
+
         [HttpPost]
         public async Task<IActionResult> DeleteProduct(DeleteProductCommandRequest request)
         {
             await mediator.Send(request);
 
             return Ok();
+        }
+
+        //brand
+        [HttpPost]
+        public async Task<IActionResult> CreateBrand(CreateBrandCommandRequest request)
+        {
+            await mediator.Send(request);
+
+            return Ok();
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllBrands()
+        {
+            var response = await mediator.Send(new GetAllProductsQueryRequest());
+
+            return Ok(response);
         }
     }
 }
